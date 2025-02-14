@@ -3,6 +3,8 @@
 //npm install googleapis
 //npm install validator
 
+//Note: This server will be published with Render.
+
 const express = require('express');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
