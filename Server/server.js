@@ -13,10 +13,8 @@ const validator = require('validator');
 const path = require('path');
 const fs = require('fs');
 const Papa = require('papaparse');
-const config = require('./config');
+const config = require('./config.js');
 const bcrypt = require('bcrypt'); // For password hashing
-
-import {Config} from './config';
 
 const googleClientId = config.googleClientId;
 const googleClientSecret = config.googleClientSecret;
