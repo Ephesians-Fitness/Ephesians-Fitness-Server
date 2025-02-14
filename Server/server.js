@@ -16,6 +16,8 @@ const Papa = require('papaparse');
 const config = require('./config');
 const bcrypt = require('bcrypt'); // For password hashing
 
+import {Config} from './config';
+
 const googleClientId = config.googleClientId;
 const googleClientSecret = config.googleClientSecret;
 const googleRefreshToken = config.googleRefreshToken;
