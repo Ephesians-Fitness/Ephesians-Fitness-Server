@@ -180,7 +180,7 @@ app.post('/register', async (req, res) => {
         from: googleUser,  // Your email address
         to: email,                     // Send to the registered user
         subject: 'Registration Successful - Welcome to Ephesians Fitness!',
-        text: `Hi ${firstName},\n\nWelcome to Ephesians Fitness!\n\n"For it is by grace you have been saved, through faith..." - Ephesians 2:8-9\n\nWe are so excited to have you as part of our community. Our mission is to inspire and empower your fitness journey through premium, Christian-centered fitness apparel.\n\nFrom stylish pump covers to comfortable joggers and hoodies, we have everything you need to look and feel great while you train.\n\nStart shopping today and hit the gym with confidence!\n\nClick below to begin your journey:\n[Start Shopping]\n[Hit the Gym]`,
+        text: `Hi ${firstName},\n\nWelcome to Ephesians Fitness!\n\n"For it is by grace you have been saved, through faith..." - Ephesians 2:8-9\n\nWe are so excited to have you as part of our community. Our mission is to inspire and empower your fitness journey through premium, Christian-centered fitness apparel.\n\nFrom stylish pump covers to comfortable joggers and hoodies, we have everything you need to look and feel great while you train.\n\nStart shopping today and hit the gym with confidence!\n`,
         html: `
           <h3>Welcome to Ephesians Fitness, ${firstName}!</h3>
           <p><em>"For it is by grace you have been saved, through faith..." - Ephesians 2:8-9</em></p>
@@ -334,7 +334,7 @@ app.post('/send-payment-email', (req, res) => {
       <h3>Order Confirmation</h3>
       <p>Dear ${name},</p>
       <p>Thank you for your order! Please review your order details below and proceed with payment using the provided banking information.</p>
-      <p>Once payment is recieved, your order will be processed and shipped, please allow for 7 to 14 days for the arrival of your order.</p>\
+      <p>Once payment is received, your order will be processed and shipped, please allow for 7 to 14 days for the arrival of your order.</p>\
       <p><strong>Please confirm payment within 48 hours to process your order.</strong></p>
 
       <p><strong>Order Number:</strong> ${orderid}</p>
@@ -636,7 +636,7 @@ app.post('/approve-order', (req, res) => {
           Thank you for shopping with us!
 
           Best regards,
-          The Team
+          Ephesians Fitness Team
         `,
         html: `
           <h3>Order Approved</h3>
