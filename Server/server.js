@@ -394,7 +394,7 @@ app.post('/send-review-email', (req, res) => {
 });
 //#endregion.
 
-//#region "Shippment Confermation Email."
+//#region "Shipment Confirmation Email."
 app.post('/send-shipment-email', (req, res) => {
   const { orderid, orderdate, totalAmount, email } = req.body;
 
@@ -430,7 +430,7 @@ app.post('/send-shipment-email', (req, res) => {
 });
 //#endregion.
 
-//#region "CSV File manepulation."
+//#region "CSV File manipulation."
 // Endpoint to update the CartID CSV file
 app.post('/update-cart-id', (req, res) => {
   const newCartID = req.body.cartData.CART_ID; // Get the new CART_ID from the request body
@@ -751,7 +751,7 @@ app.post('/add-review', (req, res) => {
 //#endregion
 
 // Start the server
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
